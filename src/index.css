@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'montserrat', sans-serif;
+	background-color: #223343;
+}
+
+header {
+	padding: 50px 15px 0px;
+}
+
+header h1 {
+	color: #FFF;
+	font-size: 48px;
+	font-weight: 500;
+	text-align: center;
+}
+
+main {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 15px;
+}
+.searchbox-wrap {
+	display: block;
+	width: 60%;
+	padding: 15px;
+	margin-left: 25%;
+
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #EEE;
+	border-radius: 8px;
+
+	color: #53565A;
+	font-size: 20px;
+	font-weight: 300;
+
+	transition: 0.4s ease-out;
+}
+.dropdown{
+	background-color:white;
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.dropyear{
+	background-color: white;
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+
+
+.searchbox{
+	background-color:white;
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.searchbox:focus {
+	box-shadow: 0px 0px 8px 3px #4484C4;
+}
+
+
+
+
+.results {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -25px;
+	
+}
+
+.results .result {
+	width: 33.333%;
+	min-width: 250px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.results .result img {
+	display: block;
+	width: 100%;
+}
+
+.results .result h3 {
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px;
+	background: #445565;
+	flex: 1 1 100%;
+	transition: 0.4s ease-out;
+}
+
+.results .result:hover h3 {
+	background: #FFF;
+	color: #223343;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	width: 450px;
+	height: 680px;
+	background-color: #445565;
+	border-radius: 15px;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+	align-content: center;
+}
+
+
+
+.popup .content {
+	display: block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+
+	color: #FFF;
+}
+
+.popup .content h2 {
+	font-size: 24px;
+	font-weight: 550;
+}
+.popup .content h2 span {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.popup .content .rating {
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.popup .content .plot {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px 30px;
+}
+
+.popup .content .plot img {
+	flex: 1 1 50%;
+	max-width: 250px;
+	padding: 0px 15px;
+	
+}
+
+.popup .content .plot p {
+	flex: 1 1 50%;
+	padding: 15px;
+}
+
+.popup .content .close {
+	display: inline-block;
+	padding: 12px 25px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: -30px;
+	background: #4484C4;
+	color: #FFF;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+
+	transition: 0.4s ease-out;
+}
+
+.popup .content .close:hover {
+	background: #223343;
+}
+
+@media screen and (min-width: 950px) {
+	.dropdown{
+		background-color:white;
+		width: 100px;
+	}
+	
+	.dropyear{
+		background-color: white;
+		width: 100px;
+	}
+	
+	.searchbox{
+		background-color:white;
+		width: 290px;
+	}
+  }
+
+  @media screen and (max-width: 730px) {
+	.dropdown{
+		background-color:white;
+		width: 60px;
+	}
+	
+	.dropyear{
+		background-color: white;
+		width: 60px;
+	}
+	
+	.searchbox{
+		background-color:white;
+		width: 100px;
+	}
+  }
+
+  
